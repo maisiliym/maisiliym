@@ -15,9 +15,7 @@
       astriz = maisiliymAstriz.datom;
 
       domeinz = {
-        uniks = {
-          maisiliym = {};
-        };
+        uniks = "maisiliym";
 
         verisign = {
           "maisiliym.xyz" = {};
