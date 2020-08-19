@@ -3,7 +3,7 @@
 
   inputs = {
     maisiliymAstriz = {
-      url = file:///homi/li/dev/astriz;
+      url = file:///home/li/dev/astriz;
       type = "git";
       ref = "master";
     };
