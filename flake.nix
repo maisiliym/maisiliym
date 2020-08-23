@@ -12,7 +12,11 @@
   outputs = { self, maisiliymAstriz }:
   {
     datom = {
+      metastriz = {};
+
       astriz = maisiliymAstriz.datom;
+
+      krimynz = {};
 
       domeinz = {
         uniks = "maisiliym";
