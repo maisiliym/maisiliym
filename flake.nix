@@ -1,28 +1,47 @@
 {
-  description = "Maisiliym-Net metastra";
+  description = "Maisiliym metastri";
 
   inputs = {
-    maisiliymAstriz = {
-      url = file:///home/li/dev/astriz;
+    xerxes = {
+      url = file:///home/li/dev/xerxes;
       type = "git";
-      ref = "master";
+      ref = "main";
     };
   };
 
-  outputs = { self, maisiliymAstriz }:
+  outputs = { self, xerxes }@fleiks:
   {
+    strok = {
+      djenyreicyn = 10;
+      spici = "metastri";
+    };
+
     datom = {
-      metastriz = {};
+      astriz = {
+        xerxes = fleiks.xerxes.datom;
+      };
 
-      astriz = maisiliymAstriz.datom;
-
-      krimynz = {};
+      krimynz = {
+        li = {};
+        byrd = {};
+      };
 
       domeinz = {
-        uniks = "maisiliym";
+        "maisiliym.xyz" = {};
+      };
 
-        verisign = {
-          "maisiliym.xyz" = {};
+      trost {
+        metastra = 3;
+
+        metastriz = { };
+
+        astriz= {
+          xerxes = 3;
+        };
+
+        krimynz = {
+          li = 3;
+          byrd = 1;
         };
 
       };
