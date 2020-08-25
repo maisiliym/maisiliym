@@ -30,7 +30,7 @@
         "maisiliym.xyz" = {};
       };
 
-      trost {
+      trost = {
         metastra = 3;
 
         metastriz = { };
