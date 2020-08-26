@@ -7,6 +7,12 @@
       type = "git";
       ref = "main";
     };
+
+    liKrimyn = {
+      url = file:///home/li/dev/li;
+      type = "git";
+      ref = "main";
+    };
   };
 
   outputs = { self, xerxes }@fleiks:
@@ -22,8 +28,7 @@
       };
 
       krimynz = {
-        li = {};
-        byrd = {};
+        li = liKrimyn.datom;
       };
 
       domeinz = {
