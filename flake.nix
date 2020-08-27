@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { self, xerxes }@fleiks:
+  outputs = { self, xerxes, liKrimyn }@fleiks:
   {
     strok = {
       djenyreicyn = 10;
