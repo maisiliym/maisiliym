@@ -49,6 +49,7 @@
 
         astriz= {
           xerxes = 3;
+          dante = 3;
         };
 
         krimynz = {
