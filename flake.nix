@@ -8,6 +8,12 @@
       ref = "fainyli";
     };
 
+    xerxes = {
+      url = file:///home/li/dev/dante;
+      type = "git";
+      ref = "fainyli";
+    };
+
     liKrimyn = {
       url = file:///home/li/dev/li;
       type = "git";
@@ -25,6 +31,7 @@
     datom = {
       astriz = {
         xerxes = fleiks.xerxes.datom;
+        dante = fleiks.dante.datom;
       };
 
       krimynz = {
