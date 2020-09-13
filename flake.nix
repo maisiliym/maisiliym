@@ -8,7 +8,7 @@
       ref = "fainyli";
     };
 
-    xerxes = {
+    dante = {
       url = file:///home/li/dev/dante;
       type = "git";
       ref = "fainyli";
@@ -21,7 +21,7 @@
     };
   };
 
-  outputs = { self, xerxes, liKrimyn }@fleiks:
+  outputs = { self, xerxes, dante, liKrimyn }@fleiks:
   {
     strok = {
       djenyreicyn = 10;
