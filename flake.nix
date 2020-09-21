@@ -14,6 +14,12 @@
       ref = "fainyli";
     };
 
+    eibetik = {
+      url = file:///home/li/dev/eibetik;
+      type = "git";
+      ref = "main";
+    };
+
     liKrimyn = {
       url = file:///home/li/dev/li;
       type = "git";
@@ -32,6 +38,7 @@
       astriz = {
         xerxes = fleiks.xerxes.datom;
         dante = fleiks.dante.datom;
+        eibetik = fleiks.eibetik.datom;
       };
 
       krimynz = {
@@ -50,6 +57,7 @@
         astriz= {
           xerxes = 3;
           dante = 3;
+          eibetik = 2;
         };
 
         krimynz = {
