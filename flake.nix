@@ -42,7 +42,7 @@
       };
 
       krimynz = {
-        li = liKrimyn.datom;
+        li = fleiks.liKrimyn.datom;
       };
 
       domeinz = {
