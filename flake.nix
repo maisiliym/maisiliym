@@ -27,7 +27,7 @@
     };
   };
 
-  outputs = { self, xerxes, dante, liKrimyn }@fleiks:
+  outputs = { self, xerxes, dante, liKrimyn, ... }@fleiks:
   {
     strok = {
       djenyreicyn = 10;
