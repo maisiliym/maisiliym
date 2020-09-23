@@ -11,7 +11,7 @@
     dante = {
       url = file:///home/li/dev/dante;
       type = "git";
-      ref = "fainyli";
+      ref = "uyrld";
     };
 
     eibetik = {
