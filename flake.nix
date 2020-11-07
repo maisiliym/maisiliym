@@ -25,6 +25,13 @@
       type = "git";
       ref = "main";
     };
+
+    maikro = {
+      url = file:///home/li/dev/maikro;
+      type = "git";
+      ref = "main";
+    };
+
   };
 
   outputs = { self, ... }@fleiks:
@@ -43,6 +50,7 @@
 
       krimynz = {
         li = fleiks.liKrimyn.datom;
+        maikro = fleiks.maikro.datom;
       };
 
       domeinz = {
@@ -61,6 +69,7 @@
         };
 
         krimynz = {
+          maikro = 3;
           li = 3;
           byrd = 1;
         };
