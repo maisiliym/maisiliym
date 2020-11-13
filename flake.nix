@@ -26,6 +26,12 @@
       ref = "main";
     };
 
+    bird = {
+      url = file:///home/li/dev/bird;
+      type = "git";
+      ref = "main";
+    };
+
     maikro = {
       url = file:///home/li/dev/maikro;
       type = "git";
@@ -50,6 +56,7 @@
 
       krimynz = {
         li = fleiks.liKrimyn.datom;
+        bird = fleiks.bird.datom;
         maikro = fleiks.maikro.datom;
       };
 
@@ -71,7 +78,7 @@
         krimynz = {
           maikro = 3;
           li = 3;
-          byrd = 1;
+          bird = 1;
         };
 
       };
