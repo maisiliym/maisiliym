@@ -14,6 +14,12 @@
       ref = "uyrld";
     };
 
+    juno = {
+      url = file:///home/li/dev/juno;
+      type = "git";
+      ref = "main";
+    };
+
     eibetik = {
       url = file:///home/li/dev/eibetik;
       type = "git";
@@ -51,6 +57,7 @@
       astriz = {
         xerxes = fleiks.xerxes.datom;
         dante = fleiks.dante.datom;
+        juno = fleiks.juno.datom;
         eibetik = fleiks.eibetik.datom;
       };
 
@@ -73,6 +80,7 @@
           xerxes = 3;
           dante = 3;
           eibetik = 2;
+          juno = 2;
         };
 
         krimynz = {
