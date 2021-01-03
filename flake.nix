@@ -5,7 +5,7 @@
     xerxes = {
       url = file:///home/li/dev/xerxes;
       type = "git";
-      ref = "main";
+      ref = "spinyr";
     };
 
     dante = {
