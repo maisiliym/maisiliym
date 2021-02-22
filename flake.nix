@@ -47,51 +47,46 @@
   };
 
   outputs = { self, ... }@fleiks:
-  {
-    strok = {
-      djenyreicyn = 10;
-      spici = "metastri";
-    };
-
-    datom = {
-      astriz = {
-        xerxes = fleiks.xerxes.datom;
-        dante = fleiks.dante.datom;
-        juno = fleiks.juno.datom;
-        eibetik = fleiks.eibetik.datom;
-      };
-
-      krimynz = {
-        li = fleiks.liKrimyn.datom;
-        bird = fleiks.bird.datom;
-        maikro = fleiks.maikro.datom;
-      };
-
-      domeinz = {
-        "maisiliym.xyz" = {};
-      };
-
-      trost = {
-        metastra = 3;
-
-        metastriz = { };
-
-        astriz= {
-          xerxes = 3;
-          dante = 3;
-          eibetik = 2;
-          juno = 2;
+    {
+      datom = {
+        astriz = {
+          xerxes = fleiks.xerxes.datom;
+          dante = fleiks.dante.datom;
+          juno = fleiks.juno.datom;
+          eibetik = fleiks.eibetik.datom;
         };
 
         krimynz = {
-          maikro = 3;
-          li = 3;
-          bird = 1;
+          li = fleiks.liKrimyn.datom;
+          bird = fleiks.bird.datom;
+          maikro = fleiks.maikro.datom;
+        };
+
+        domeinz = {
+          "maisiliym.xyz" = { };
+        };
+
+        trost = {
+          metastra = 3;
+
+          metastriz = { };
+
+          astriz = {
+            xerxes = 3;
+            dante = 3;
+            eibetik = 2;
+            juno = 2;
+          };
+
+          krimynz = {
+            maikro = 3;
+            li = 3;
+            bird = 1;
+          };
+
         };
 
       };
 
     };
-
-  };
 }
