@@ -3,7 +3,7 @@
   #:export (root-li-authorized-keys))
 
 (define li-ssh-prikriomz-file
-  (local-file "priKriomz/li-dante.pub"))
+  (local-file "prikriomz/li.pub"))
 
 (define root-li-authorized-keys
   (list
