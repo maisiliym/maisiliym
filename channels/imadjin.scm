@@ -1,5 +1,25 @@
 (list
  (channel
+  (name 'uniks)
+  (url "https://github.com/maisiliym/uniks")
+  (branch "skiim")
+  (commit
+   "9e9102ca244ce6c85a652a2a405d50de42230c91")
+  (introduction
+   (make-channel-introduction
+    "9e9102ca244ce6c85a652a2a405d50de42230c91"
+    (openpgp-fingerprint
+     "775A 7994 B5A7 0AD5 2D7E  B03B EE38 5D17 F4AD 0223"))))
+ (channel
+   (name 'giiks)
+   (url "https://github.com/maisiliym/giiks")
+   (branch "pri-alfa")
+   (introduction
+    (channel-introduction
+     (version 0)
+     (commit "4bcb8178ffc623c11934b9d48e797ece16bc0818")
+     (signer "775A 7994 B5A7 0AD5 2D7E  B03B EE38 5D17 F4AD 0223"))))
+ (channel
   (name 'guix-home-manager)
   (url "https://framagit.org/tyreunom/guix-home-manager.git")
   (branch "master")

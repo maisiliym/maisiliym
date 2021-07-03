@@ -4,7 +4,7 @@
   (url "https://github.com/maisiliym/uniks")
   (branch "skiim")
   (commit
-   "9e9102ca244ce6c85a652a2a405d50de42230c91")
+   "7a5dade899b873e20fb689cfe1e26b57fe53d4f4")
   (introduction
    (make-channel-introduction
     "9e9102ca244ce6c85a652a2a405d50de42230c91"
@@ -14,9 +14,10 @@
   (name 'giiks)
   (url "https://github.com/maisiliym/giiks")
   (branch "pri-alfa")
+  (commit "98e2795e97f900163eb0bed8c057fd1935c0e2e2")
   (introduction
    (make-channel-introduction
-    "4bcb8178ffc623c11934b9d48e797ece16bc0818"
+    "13ac24ac8477e842c3611f32972f73f26d1d3f7b"
     (openpgp-fingerprint
      "775A 7994 B5A7 0AD5 2D7E  B03B EE38 5D17 F4AD 0223"))))
  (channel

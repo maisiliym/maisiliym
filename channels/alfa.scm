@@ -15,9 +15,9 @@
   (url "https://github.com/maisiliym/uniks")
   (branch "skiim")
   (commit
-   "ae73ab6ce4978fb28e25f7ff473f0c51e430e075")
+   "9e9102ca244ce6c85a652a2a405d50de42230c91")
   (introduction
    (make-channel-introduction
-    "ae73ab6ce4978fb28e25f7ff473f0c51e430e075"
+    "9e9102ca244ce6c85a652a2a405d50de42230c91"
     (openpgp-fingerprint
      "775A 7994 B5A7 0AD5 2D7E  B03B EE38 5D17 F4AD 0223")))))

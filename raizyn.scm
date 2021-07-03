@@ -59,4 +59,4 @@
    "63A149ECC539BAF2B001C57E9A55A566BCD48446"))
 
 (define-public %guix-substitute-urls
-  (list "http://[fd43:6908:a1dd:0:685c:4fef:f9bf:ed56]:8080")) ; verihaki
+  (list ""))
