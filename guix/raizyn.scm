@@ -4,7 +4,7 @@
 (export root-li-authorized-keys metaneksys)
 
 (define li-ssh-prikriomz-file
-  (local-file "prikriomz/li.pub"))
+  (local-file "../prikriomz/li.pub"))
 
 (define root-li-authorized-keys
   (list
@@ -13,8 +13,8 @@
 
 (define-public %guix-authorized-keys
   (list
-   (local-file "prikriomz/dante-guix.pub")
-   (local-file "prikriomz/xerxes-guix.pub")))
+   (local-file "../prikriomz/dante-guix.pub")
+   (local-file "../prikriomz/xerxes-guix.pub")))
 
 (define-public %li-keygrips
   (list
