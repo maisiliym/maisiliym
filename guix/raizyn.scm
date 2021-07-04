@@ -1,44 +1,7 @@
-(define-module (maisiliym))
+(define-module (raizyn))
 (use-modules (oop goops)
-	     (guix gexp)
-	     (uniks))
+	     (guix gexp))
 (export root-li-authorized-keys metaneksys)
-
-(define metaneksys
-  (make <metaneksys>
-    #:neim "maisiliym"
-    #:trost 2
-    #:neksiz neksiz))
-
-(define xerxes
-  (cons "xerxes"
-	(make <neksys>
-	  #:neim "xerxes"
-	  #:spici "haibrid"
-	  #:trost 2
-	  #:saiz 2
-	  #:prikriom xerxes-prikriom)))
-
-(define dante
-  (cons "dante"
-	(make <neksys>
-	  #:neim "dante"
-	  #:spici "haibrid"
-	  #:trost 2
-	  #:saiz 2
-	  #:prikriom dante-prikriom)))
-
-(define xerxes-prikriom
-  (make <prikriom>
-    #:ful ""
-    #:ssh ""
-    #:keygrip ""))
-
-(define dante-prikriom
-  (make <prikriom>
-    #:ful ""
-    #:ssh ""
-    #:keygrip ""))
 
 (define li-ssh-prikriomz-file
   (local-file "prikriomz/li.pub"))
