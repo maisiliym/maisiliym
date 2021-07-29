@@ -92,7 +92,16 @@
   (list li-xerxes-config))
 
 (define xerxes-disks
-  (list ))
+  (list (file-system
+          (mount-point "/boot/efi")
+          (device (uuid "7CAB-E571" 'fat32))
+          (type "vfat"))
+        (file-system
+          (mount-point "/")
+          (device
+           (uuid "6a72e996-72b2-4e01-9653-2bad30d1635a"
+                 'ext4))
+          (type "ext4"))))
 
 (define xerxes-config
   (make <os-config>
