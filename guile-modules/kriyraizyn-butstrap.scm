@@ -24,7 +24,7 @@
 (define li-xerxes-config
   (let
       ((li-pgp li-xerxes-pgp)
-       (li-keygrip "AD305831DD33E62F9AD587718D4E5E6999CD84EA"))
+       (li-keygrip "63A149ECC539BAF2B001C57E9A55A566BCD48446"))
     (make <user-config>
       #:name "li"
       #:spici "kodyr"
@@ -40,7 +40,7 @@
 (define li-dante-config
   (let
       ((li-pgp li-dante-pgp)
-       (li-keygrip "63A149ECC539BAF2B001C57E9A55A566BCD48446"))
+       (li-keygrip "AD305831DD33E62F9AD587718D4E5E6999CD84EA"))
     (make <user-config>
       #:name "li"
       #:spici "kodyr"
