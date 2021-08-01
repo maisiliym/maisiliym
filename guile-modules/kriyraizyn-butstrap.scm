@@ -8,16 +8,14 @@
 	dante-config xerxes-config
 	li-dante-config li-xerxes-config)
 
-(define dark #f)
-
 (define domain "maisiliym")
+(define version "aylfyPraim")
+(define dark #f)
 
 (define li-sshz
   '("ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK769R2iKyr5rgBvR9OFeSN2kdo8h+LtXVUjzdFLf4vl openpgp:0xF4AD0223"
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEygb1Ft1hIB+ExPGLq08im9rFYvOeYXX+NetgqjI3Db"))
 
-(define dante-guix-key (local-file "dante-guix.pub"))
-(define xerxes-guix-key (local-file "xerxes-guix.pub"))
 (define li-xerxes-pgp (local-file "li-xexes.asc"))
 (define li-dante-pgp (local-file "li-dante.asc"))
 
@@ -55,6 +53,9 @@
 
 (define dante-user-configs
   (list li-dante-config))
+
+(define dante-guix-key (local-file "dante-guix.pub"))
+(define xerxes-guix-key (local-file "xerxes-guix.pub"))
 
 (define dante-disks
   (list (file-system
@@ -120,4 +121,5 @@
 (define maisiliym-config
   (make <cluster-config>
     #:name domain
+    #:version version
     #:os-configs (list xerxes-config dante-config)))
