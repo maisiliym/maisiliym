@@ -1,4 +1,4 @@
-(define-module (kriyraizyn-butstrap))
+(define-module (kriozon))
 (use-modules (oop goops)
 	     (guix gexp)
 	     (uniks)
@@ -10,7 +10,7 @@
 
 (define domain "maisiliym")
 (define version "aylfyPraim")
-(define dark #f)
+(define dark #t)
 
 (define li-sshz
   '("ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK769R2iKyr5rgBvR9OFeSN2kdo8h+LtXVUjzdFLf4vl openpgp:0xF4AD0223"
@@ -84,6 +84,7 @@
     #:user-configs dante-user-configs
     #:substitute-urls '()
     #:disks dante-disks
+    #:model "X230"
     #:arch "intel"
     #:swap-disks (list (uuid "f6b1c20b-6fb7-4fdf-8215-1cbc046e64a6"))
     #:guix-authorized-keys (list xerxes-guix-key)

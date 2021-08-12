@@ -1,5 +1,4 @@
-(use-modules 
- (kriyraizyn-butstrap)
- (uniks))
+(use-modules (kriozon)
+	     (uniks))
 
 (->os dante-config)

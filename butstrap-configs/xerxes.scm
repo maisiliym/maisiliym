@@ -1,5 +1,5 @@
 (use-modules 
- (kriyraizyn-butstrap)
+ (kriozon)
  (uniks))
 
 (->os xerxes-config)
