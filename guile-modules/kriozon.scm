@@ -9,8 +9,8 @@
 	li-dante-config li-xerxes-config)
 
 (define domain "maisiliym")
-(define version "aylfyPraim")
-(define dark #t)
+(define version "aylfySekynd")
+(define dark #f)
 
 (define li-sshz
   '("ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK769R2iKyr5rgBvR9OFeSN2kdo8h+LtXVUjzdFLf4vl openpgp:0xF4AD0223"
@@ -32,8 +32,7 @@
       #:pgp li-pgp
       #:keygrip li-keygrip
       #:github "maisiliym"
-      #:dark dark
-      )))
+      #:dark dark)))
 
 (define li-dante-config
   (let
@@ -48,8 +47,7 @@
       #:pgp li-pgp
       #:keygrip li-keygrip
       #:github "maisiliym"
-      #:dark dark
-      )))
+      #:dark dark)))
 
 (define dante-user-configs
   (list li-dante-config))
