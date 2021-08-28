@@ -1,7 +1,7 @@
 (define-module (kriozon))
 (use-modules (oop goops)
 	     (guix gexp)
-	     (uniks)
+	     (uniks) (uniks net)
 	     (guix gexp)
 	     (gnu system file-systems))
 (export maisiliym-config
@@ -23,7 +23,7 @@
   (let
       ((li-pgp li-xerxes-pgp)
        (li-keygrip "63A149ECC539BAF2B001C57E9A55A566BCD48446"))
-    (make <user-config>
+    (make UserConfig
       #:name "li"
       #:spici "kodyr"
       #:akses 3
@@ -38,7 +38,7 @@
   (let
       ((li-pgp li-dante-pgp)
        (li-keygrip "AD305831DD33E62F9AD587718D4E5E6999CD84EA"))
-    (make <user-config>
+    (make UserConfig
       #:name "li"
       #:spici "kodyr"
       #:akses 3
@@ -63,21 +63,27 @@
         (file-system
           (mount-point "/")
           (device
-           (uuid "42d620dc-f7eb-4e4c-a33d-200aa0f3b830"
-                 'ext4))
+           (uuid "42d620dc-f7eb-4e4c-a33d-200aa0f3b830" 'ext4))
           (type "ext4"))
         (file-system
           (mount-point "/home")
           (device
-           (uuid "1f49b09f-e7a3-4977-ae91-7525d818c620"
-                 'ext4))
-          (type "ext4"))))
+           (uuid "1f49b09f-e7a3-4977-ae91-7525d818c620" 'ext4))
+          (type "ext4"))
+	;; ; (bug? (support? xfs guix))
+	;; (file-system
+        ;;   (mount-point "/disks/internal")
+        ;;   (device
+        ;;    (uuid "56aa3da0-e926-4c64-97f2-36b730e7ebe7"))
+        ;;   (type "xfs"))
+	))
 
 (define dante-config
-  (make <os-config>
+  (make OsConfig
     #:name "dante"
     #:domain domain
     #:spici "haibrid"
+    #:akses 3
     #:saiz 2
     #:user-configs dante-user-configs
     #:substitute-urls '()
@@ -86,7 +92,10 @@
     #:arch "intel"
     #:swap-disks (list (uuid "f6b1c20b-6fb7-4fdf-8215-1cbc046e64a6"))
     #:guix-authorized-keys (list xerxes-guix-key)
-    #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIGjgYK7TBRSDa6Iuapw18VkS970p4IgZAo3iC/QiiypL"))
+    #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIGjgYK7TBRSDa6Iuapw18VkS970p4IgZAo3iC/QiiypL"
+    #:links (list
+	     (make EthernetLink #:Interface "enp0s25"
+		   #:Subnet "d7b:187e:fa98:a7fd"))))
 
 (define xerxes-user-configs
   (list li-xerxes-config))
@@ -104,10 +113,11 @@
           (type "ext4"))))
 
 (define xerxes-config
-  (make <os-config>
+  (make OsConfig
     #:name "xerxes"
     #:domain domain
     #:spici "haibrid"
+    #:akses 3
     #:saiz 2
     #:user-configs xerxes-user-configs
     #:substitute-urls '()
@@ -115,10 +125,13 @@
     #:arch "intel"
     #:swap-disks (list )
     #:guix-authorized-keys (list dante-guix-key)
-    #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIIFxIyvJxTrKCdXDrLi1ac3kZW8VE/+pW4f/SZVwj2Ue"))
+    #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIIFxIyvJxTrKCdXDrLi1ac3kZW8VE/+pW4f/SZVwj2Ue"
+    #:links (list
+	     (make EthernetLink #:Interface "enp0s25"
+		   #:Subnet "dead:beef:dead:beef"))))
 
 (define maisiliym-config
-  (make <cluster-config>
+  (make ClusterConfig
     #:name domain
     #:version version
-    #:os-configs (list xerxes-config dante-config)))
+    #:OsConfigs (list xerxes-config dante-config)))

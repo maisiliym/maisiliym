@@ -1,4 +1,4 @@
 (use-modules (kriozon)
 	     (uniks))
 
-(->os dante-config)
+(->os maisiliym-config dante-config)
