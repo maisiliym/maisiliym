@@ -4,9 +4,9 @@
 	     (uniks) (uniks net)
 	     (guix gexp)
 	     (gnu system file-systems))
-(export maisiliym-config
-	dante-config xerxes-config
-	li-dante-config li-xerxes-config)
+(export maisiliymClusterConfig
+	danteOsConfig xerxesOsConfig
+	liDanteUserConfig liXerxesUserConfig)
 
 (define domain "maisiliym")
 (define version "aylfySekynd")
@@ -19,7 +19,7 @@
 (define li-xerxes-pgp (local-file "li-xexes.asc"))
 (define li-dante-pgp (local-file "li-dante.asc"))
 
-(define li-xerxes-config
+(define liXerxesUserConfig
   (let
       ((li-pgp li-xerxes-pgp)
        (li-keygrip "63A149ECC539BAF2B001C57E9A55A566BCD48446"))
@@ -34,7 +34,7 @@
       #:github "maisiliym"
       #:dark dark)))
 
-(define li-dante-config
+(define liDanteUserConfig
   (let
       ((li-pgp li-dante-pgp)
        (li-keygrip "AD305831DD33E62F9AD587718D4E5E6999CD84EA"))
@@ -50,7 +50,7 @@
       #:dark dark)))
 
 (define dante-user-configs
-  (list li-dante-config))
+  (list liDanteUserConfig))
 
 (define dante-guix-key (local-file "dante-guix.pub"))
 (define xerxes-guix-key (local-file "xerxes-guix.pub"))
@@ -78,7 +78,7 @@
         ;;   (type "xfs"))
 	))
 
-(define dante-config
+(define danteOsConfig
   (make OsConfig
     #:name "dante"
     #:domain domain
@@ -93,12 +93,13 @@
     #:swap-disks (list (uuid "f6b1c20b-6fb7-4fdf-8215-1cbc046e64a6"))
     #:guix-authorized-keys (list xerxes-guix-key)
     #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIGjgYK7TBRSDa6Iuapw18VkS970p4IgZAo3iC/QiiypL"
-    #:links (list
-	     (make EthernetLink #:Interface "enp0s25"
-		   #:Subnet "d7b:187e:fa98:a7fd"))))
+    #:NeksPubkey ""
+    #:EthernetLinks (list
+		     (make EthernetLink #:Interface "enp0s25"
+			   #:Subnet "d7b:187e:fa98:a7fd"))))
 
 (define xerxes-user-configs
-  (list li-xerxes-config))
+  (list liXerxesUserConfig))
 
 (define xerxes-disks
   (list (file-system
@@ -112,7 +113,7 @@
                  'ext4))
           (type "ext4"))))
 
-(define xerxes-config
+(define xerxesOsConfig
   (make OsConfig
     #:name "xerxes"
     #:domain domain
@@ -126,12 +127,13 @@
     #:swap-disks (list )
     #:guix-authorized-keys (list dante-guix-key)
     #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIIFxIyvJxTrKCdXDrLi1ac3kZW8VE/+pW4f/SZVwj2Ue"
-    #:links (list
-	     (make EthernetLink #:Interface "enp0s25"
-		   #:Subnet "dead:beef:dead:beef"))))
+    #:NeksPubkey ""
+    #:EthernetLinks (list
+		     (make EthernetLink #:Interface "enp0s25"
+			   #:Subnet "dead:beef:dead:beef"))))
 
-(define maisiliym-config
+(define maisiliymClusterConfig
   (make ClusterConfig
     #:name domain
     #:version version
-    #:OsConfigs (list xerxes-config dante-config)))
+    #:OsConfigs (list xerxesOsConfig danteOsConfig)))
