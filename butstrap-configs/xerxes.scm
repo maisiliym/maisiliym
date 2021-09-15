@@ -1,5 +1,4 @@
-(use-modules 
- (kriozon)
- (uniks))
+(use-modules (kriozon)
+	     (uniks))
 
-(->os xerxes-config)
+(->os maisiliymClusterConfig xerxesOsConfig)

@@ -93,7 +93,7 @@
     #:swap-disks (list (uuid "f6b1c20b-6fb7-4fdf-8215-1cbc046e64a6"))
     #:guix-authorized-keys (list xerxes-guix-key)
     #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIGjgYK7TBRSDa6Iuapw18VkS970p4IgZAo3iC/QiiypL"
-    #:NeksPubkey ""
+    #:NeksPubkey "MCowBQYDK2VuAyEA/vXhjE8ZCdH2K3mTM1lpOivAWU4/zod/SG1+ld7zyRQ="
     #:EthernetLinks (list
 		     (make EthernetLink #:Interface "enp0s25"
 			   #:Subnet "d7b:187e:fa98:a7fd"))))
@@ -127,10 +127,10 @@
     #:swap-disks (list )
     #:guix-authorized-keys (list dante-guix-key)
     #:ssh "AAAAC3NzaC1lZDI1NTE5AAAAIIFxIyvJxTrKCdXDrLi1ac3kZW8VE/+pW4f/SZVwj2Ue"
-    #:NeksPubkey ""
+    #:NeksPubkey "MCowBQYDK2VuAyEAxfL+wNwNDLG83dbRV07g3Dc4m/5/OayL6BkBelzVIGo="
     #:EthernetLinks (list
 		     (make EthernetLink #:Interface "enp0s25"
-			   #:Subnet "dead:beef:dead:beef"))))
+			   #:Subnet "5c8:47b7:81af:b079"))))
 
 (define maisiliymClusterConfig
   (make ClusterConfig
