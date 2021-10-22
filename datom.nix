@@ -64,7 +64,7 @@
         niksPriKriom = "AAqjPi1kOaOWyZrwupTpHNL/7SYjYmaeDu1J+hNtVFA=";
       };
     };
-    
+
     dante = {
       spici = "haibrid";
       saiz = 3;
@@ -144,7 +144,12 @@
       spici = "Onlimityd";
       saiz = 3;
       kibord = "colemak";
+      githubId = "maisiliym";
       priKriomz = {
+        dante = {
+          eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIK769R2iKyr5rgBvR9OFeSN2kdo8h+LtXVUjzdFLf4vl";
+          keygrip = "AD305831DD33E62F9AD587718D4E5E6999CD84EA";
+        };
         xerxes = {
           eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIEygb1Ft1hIB+ExPGLq08im9rFYvOeYXX+NetgqjI3Db";
           keygrip = "63A149ECC539BAF2B001C57E9A55A566BCD48446";
@@ -174,7 +179,7 @@
           keygrip = "63A149ECC539BAF2B001C57E9A55A566BCD48446";
         };
       };
-      
+
     };
   };
 
