@@ -1,66 +1,69 @@
 {
   astriz = {
+    balboa = {
+      spici = "sentyr";
+      mycin = {
+        spici = "metyl";
+        ark = "arm64";
+        modyl = "rock64";
+      };
+      priKriomz = {
+        eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIPvxPTAPPKe6Ne9MW4C04Ihe0g4NS12xydci/JW59pIe";
+      };
+      io = {
+        disks = {
+          "/" = {
+            device = "/dev/disk/by-label/NIXOS_SD";
+            fsType = "ext4";
+          };
+        };
+      };
+    };
+
     xerxes = {
       spici = "haibrid";
       saiz = 3;
       trost = 3;
-
       mycin = {
         spici = "metyl";
         ark = "x86-64";
         modyl = "ThinkPad X240";
       };
-
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
-
         disks = {
           "/" = {
             device = "/dev/disk/by-uuid/c5788e39-39da-41f1-9f6c-4137abb0c406";
             fsType = "btrfs";
             options = [ "subvol=__active/root" ];
           };
-
           "/nix" = {
             device = "/dev/disk/by-uuid/c5788e39-39da-41f1-9f6c-4137abb0c406";
             fsType = "btrfs";
             options = [ "subvol=__active/nix" ];
           };
-
           "/home" = {
             device = "/dev/disk/by-uuid/c5788e39-39da-41f1-9f6c-4137abb0c406";
             fsType = "btrfs";
             options = [ "subvol=__active/home" ];
           };
-
           "/var" = {
             device = "/dev/disk/by-uuid/c5788e39-39da-41f1-9f6c-4137abb0c406";
             fsType = "btrfs";
             options = [ "subvol=__active/var" ];
           };
-
           "/boot" = {
             device = "/dev/disk/by-uuid/0A84-F61D";
             fsType = "vfat";
           };
         };
-
         swapDevices = [
           { device = "/dev/disk/by-uuid/03a014a2-9d6c-4c8e-b4be-b01415ad1beb"; }
         ];
-
       };
-
       priKriomz = {
         eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIE172GOItdwxQwJhnVeaSuHIwYrcj5bENafKL9y/mKZX";
-
-        # yggdrasil = {
-        #   priKriom = "8d88d7d41c82427e5fbe3e6921ab5972a3f1203ca5a80735ea708a95121db818";
-        #   address = "201:3591:ac1:bc85:427f:2a79:2e6a:c250";
-        #   subnet = "301:3591:ac1:bc85::";
-        # };
-
         niksPriKriom = "AAqjPi1kOaOWyZrwupTpHNL/7SYjYmaeDu1J+hNtVFA=";
       };
     };
@@ -73,14 +76,12 @@
         spici = "metyl";
         ark = "x86-64";
       };
-
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
         disks = { };
         swapDevices = [ ];
       };
-
     };
 
     juno = {
@@ -92,7 +93,6 @@
         ark = "x86-64";
         modyl = "ThinkPad X230";
       };
-
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
@@ -101,28 +101,23 @@
             device = "/dev/disk/by-uuid/63ff7f56-4f1f-4676-9b69-1b729bfcb555";
             fsType = "xfs";
           };
-
           "/home" = {
             device = "/dev/disk/by-uuid/fdfc8c28-7ea3-4cbc-962b-e156114e765d";
             fsType = "xfs";
           };
-
           "/boot" = {
             device = "/dev/disk/by-uuid/293E-399F";
             fsType = "vfat";
           };
         };
-
         swapDevices = [ ];
       };
-
       priKriomz = {
         yggdrasil = {
           priKriom = "834f26b8d12a4f787fc8262114f2a873641f331e1b26e9ce0e01539f35f2f160";
           address = "200:922:1a8f:40f8:db97:38ab:a7aa:1b39";
           subnet = "300:922:1a8f:40f8::";
         };
-
         niksPriKriom = "";
       };
     };
@@ -191,6 +186,7 @@
     metastra = 3;
     metastriz = { };
     astriz = {
+      balboa = 3;
       xerxes = 3;
       dante = 3;
       eibetik = 2;
