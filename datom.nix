@@ -70,11 +70,12 @@
 
     dante = {
       spici = "haibrid";
-      saiz = 3;
+      saiz = 1;
       trost = 3;
       mycin = {
         spici = "metyl";
         ark = "x86-64";
+        modyl = "ThinkPad X230";
       };
       io = {
         kibord = "colemak";
