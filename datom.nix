@@ -27,7 +27,7 @@
       mycin = {
         spici = "metyl";
         ark = "x86-64";
-        modyl = "ThinkPad X240";
+        modyl = "ThinkPadX240";
       };
       io = {
         kibord = "colemak";
@@ -75,12 +75,21 @@
       mycin = {
         spici = "metyl";
         ark = "x86-64";
-        modyl = "ThinkPad X230";
+        modyl = "ThinkPadX230";
       };
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
-        disks = { };
+        disks = {
+          "/" = {
+            device = "/dev/disk/by-uuid/6d6f8638-a0a7-49f9-81c2-2143b42ef3d5";
+            fsType = "xfs";
+          };
+          "/boot" = {
+            device = "/dev/disk/by-uuid/DE95-8F37";
+            fsType = "vfat";
+          };
+        };
         swapDevices = [ ];
       };
     };
@@ -92,7 +101,7 @@
       mycin = {
         spici = "metyl";
         ark = "x86-64";
-        modyl = "ThinkPad X230";
+        modyl = "ThinkPadX230";
       };
       io = {
         kibord = "colemak";
