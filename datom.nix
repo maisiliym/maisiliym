@@ -6,6 +6,7 @@
         spici = "metyl";
         ark = "arm64";
         modyl = "rock64";
+        korz = 4;
       };
       priKriomz = {
         eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIPvxPTAPPKe6Ne9MW4C04Ihe0g4NS12xydci/JW59pIe";
@@ -28,6 +29,7 @@
         spici = "metyl";
         ark = "x86-64";
         modyl = "ThinkPadX240";
+        korz = 2;
       };
       io = {
         kibord = "colemak";
@@ -76,6 +78,7 @@
         spici = "metyl";
         ark = "x86-64";
         modyl = "ThinkPadX230";
+        korz = 2;
       };
       io = {
         kibord = "colemak";
@@ -102,6 +105,7 @@
         spici = "metyl";
         ark = "x86-64";
         modyl = "ThinkPadX230";
+        korz = 2;
       };
       io = {
         kibord = "colemak";
@@ -140,6 +144,7 @@
         spici = "pod";
         ubyrAstri = "xerxes";
         ubyrKrimyn = "li";
+        korz = 1;
       };
     };
   };
