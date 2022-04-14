@@ -31,6 +31,8 @@
         modyl = "ThinkPadX240";
         korz = 2;
       };
+      neksysIp = "5::1";
+      linkLocalIPs = [{ spici = "ethernet"; suffix = "aec6:ecad:34e0:b41f"; }];
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
@@ -63,8 +65,6 @@
         swapDevices = [
           { device = "/dev/disk/by-uuid/03a014a2-9d6c-4c8e-b4be-b01415ad1beb"; }
         ];
-        neksysIp = "5::1";
-        linkLocalIPs = [{ spici = "ethernet"; suffix = "aec6:ecad:34e0:b41f"; }];
       };
       priKriomz = {
         eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIE172GOItdwxQwJhnVeaSuHIwYrcj5bENafKL9y/mKZX";
@@ -82,6 +82,8 @@
         modyl = "ThinkPadX230";
         korz = 2;
       };
+      neksysIp = "5::2";
+      linkLocalIPs = [{ spici = "ethernet"; suffix = "3e97:eff:fea3:30d2"; }];
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
@@ -96,8 +98,6 @@
           };
         };
         swapDevices = [ ];
-        neksysIp = "5::2";
-        linkLocalIPs = [{ spici = "ethernet"; suffix = "3e97:eff:fea3:30d2"; }];
       };
     };
 
@@ -197,9 +197,7 @@
     };
   };
 
-  domeinz = {
-    "maisiliym.xyz" = { };
-  };
+  domeinz = { };
 
   trost = {
     metastra = 3;
