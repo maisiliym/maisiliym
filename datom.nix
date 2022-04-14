@@ -31,8 +31,11 @@
         modyl = "ThinkPadX240";
         korz = 2;
       };
+
       neksysIp = "5::1";
       linkLocalIPs = [{ spici = "ethernet"; suffix = "aec6:ecad:34e0:b41f"; }];
+      wireguardPriKriom = "oOeqiGZC+oaIL0rKirFyiJ4N6qDQWICZ2wRelLMOR0o=";
+
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
@@ -82,8 +85,11 @@
         modyl = "ThinkPadX230";
         korz = 2;
       };
+
       neksysIp = "5::2";
       linkLocalIPs = [{ spici = "ethernet"; suffix = "3e97:eff:fea3:30d2"; }];
+      wireguardPriKriom = "3HeLSQr+lbJp4w9oUILEVWrBpYYCoQzxkARWDCBf5j8=";
+
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
