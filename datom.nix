@@ -63,6 +63,7 @@
         swapDevices = [
           { device = "/dev/disk/by-uuid/03a014a2-9d6c-4c8e-b4be-b01415ad1beb"; }
         ];
+        neksysIp = "5::1";
         linkLocalIPs = [{ spici = "ethernet"; suffix = "aec6:ecad:34e0:b41f"; }];
       };
       priKriomz = {
@@ -95,6 +96,7 @@
           };
         };
         swapDevices = [ ];
+        neksysIp = "5::2";
         linkLocalIPs = [{ spici = "ethernet"; suffix = "3e97:eff:fea3:30d2"; }];
       };
     };
