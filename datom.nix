@@ -32,7 +32,7 @@
         korz = 2;
       };
 
-      neksysIp = "5::1";
+      neksysIp = "5::1/128";
       linkLocalIPs = [{ spici = "ethernet"; suffix = "aec6:ecad:34e0:b41f"; }];
       wireguardPriKriom = "oOeqiGZC+oaIL0rKirFyiJ4N6qDQWICZ2wRelLMOR0o=";
 
@@ -86,7 +86,7 @@
         korz = 2;
       };
 
-      neksysIp = "5::2";
+      neksysIp = "5::2/128";
       linkLocalIPs = [{ spici = "ethernet"; suffix = "3e97:eff:fea3:30d2"; }];
       wireguardPriKriom = "3HeLSQr+lbJp4w9oUILEVWrBpYYCoQzxkARWDCBf5j8=";
 
