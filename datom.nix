@@ -190,7 +190,7 @@
     };
 
     maikro = {
-      spici = "Uniks";
+      spici = "Niks";
       saiz = 1;
       kibord = "colemak";
       priKriomz = {
