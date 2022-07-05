@@ -218,7 +218,7 @@
     krimynz = {
       maikro = 3;
       li = 3;
-      bird = 1;
+      bird = 2;
     };
   };
 }
