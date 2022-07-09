@@ -142,7 +142,7 @@
           address = "200:922:1a8f:40f8:db97:38ab:a7aa:1b39";
           subnet = "300:922:1a8f:40f8::";
         };
-        niksPriKriom = "";
+        niksPriKriom = "Mx+wLIfTWjYm2b+gI6X5vxY0eGtScNB1+51DxIZbeus=";
       };
     };
 
