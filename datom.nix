@@ -21,6 +21,39 @@
       };
     };
 
+    tiger = {
+      spici = "edj";
+      saiz = 3;
+      trost = 3;
+      mycin = {
+        spici = "metyl";
+        ark = "x86-64";
+        modyl = "ThinkPadE15Gen2Intel";
+        korz = 4;
+      };
+      neksysIp = "6::1/128";
+      linkLocalIPs = [ ];
+      io = {
+        kibord = "colemak";
+        butlodyr = "uefi";
+        disks = {
+          "/" = {
+            device = "/dev/disk/by-uuid/158a5a78-3dbc-4c80-99b6-96e433bd836a";
+            fsType = "ext4";
+          };
+          "/boot" = {
+            device = "/dev/disk/by-uuid/50F3-9E04";
+            fsType = "vfat";
+          };
+        };
+        swapDevices = [{ device = "/dev/disk/by-uuid/4dcf2ad2-4677-483f-9900-046f0f53053a"; }];
+      };
+      priKriomz = {
+        niksPriKriom = "P2pDdZrmbLO8EBUuwLvt+FJlqh4ZRVczgGV/Tmr1Bis=";
+        eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIKeoCIfvbUDue17FBglmKF1N2cKH9CWsS5EcXOyBxq5T";
+      };
+    };
+
     xerxes = {
       spici = "haibrid";
       saiz = 3;
@@ -170,6 +203,10 @@
           eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIK769R2iKyr5rgBvR9OFeSN2kdo8h+LtXVUjzdFLf4vl";
           keygrip = "AD305831DD33E62F9AD587718D4E5E6999CD84EA";
         };
+        tiger = {
+          eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAILTm644m4foET1j+DGHl0gfEyGD9A4YltsNOidDUn3BG";
+          keygrip = "1785B4D2813D7ED1913A05FA74FF42B9153EEFF0";
+        };
         xerxes = {
           eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIEygb1Ft1hIB+ExPGLq08im9rFYvOeYXX+NetgqjI3Db";
           keygrip = "63A149ECC539BAF2B001C57E9A55A566BCD48446";
@@ -214,6 +251,7 @@
       dante = 3;
       eibetik = 2;
       juno = 2;
+      tiger = 3;
     };
     krimynz = {
       maikro = 3;
