@@ -108,7 +108,7 @@
         ];
       };
       priKriomz = {
-        eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIE172GOItdwxQwJhnVeaSuHIwYrcj5bENafKL9y/mKZX";
+        eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIA0GR4qcTTTgkdes3aYFz998tWC6w0wss4nRDfvAFBda";
         niksPriKriom = "AAqjPi1kOaOWyZrwupTpHNL/7SYjYmaeDu1J+hNtVFA=";
         yggdrasil = {
           priKriom = "2748bfce76cf7c2a8d6d73241fadd4cad2a32f631df6a4be4bfb33969b0490e0";
