@@ -31,7 +31,7 @@
         modyl = "ThinkPadE15Gen2Intel";
         korz = 4;
       };
-      neksysIp = "6::1/128";
+      neksysIp = "5::4/128";
       linkLocalIPs = [ ];
       io = {
         kibord = "colemak";
@@ -51,6 +51,11 @@
       priKriomz = {
         niksPriKriom = "P2pDdZrmbLO8EBUuwLvt+FJlqh4ZRVczgGV/Tmr1Bis=";
         eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIKeoCIfvbUDue17FBglmKF1N2cKH9CWsS5EcXOyBxq5T";
+        yggdrasil = {
+          priKriom = "38ed4c7c9ffd2e79361af3202f406810069fa37ff991e6d1d434a529ba75dfb3";
+          address = "202:3895:9c1b:16:8c36:4f28:66fe:85fc";
+          subnet = "302:3895:9c1b:16";
+        };
       };
     };
 
@@ -105,6 +110,11 @@
       priKriomz = {
         eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIE172GOItdwxQwJhnVeaSuHIwYrcj5bENafKL9y/mKZX";
         niksPriKriom = "AAqjPi1kOaOWyZrwupTpHNL/7SYjYmaeDu1J+hNtVFA=";
+        yggdrasil = {
+          priKriom = "2748bfce76cf7c2a8d6d73241fadd4cad2a32f631df6a4be4bfb33969b0490e0";
+          address = "202:c5ba:18c:4984:1eab:9494:66df:291";
+          subnet = "302:c5ba:18c:4984";
+        };
       };
     };
 
@@ -118,11 +128,9 @@
         modyl = "ThinkPadX230";
         korz = 2;
       };
-
       neksysIp = "5::2/128";
       linkLocalIPs = [{ spici = "ethernet"; suffix = "3e97:eff:fea3:30d2"; }];
       wireguardPriKriom = "3HeLSQr+lbJp4w9oUILEVWrBpYYCoQzxkARWDCBf5j8=";
-
       io = {
         kibord = "colemak";
         butlodyr = "uefi";
@@ -137,6 +145,14 @@
           };
         };
         swapDevices = [ ];
+      };
+      priKriomz = {
+        yggdrasil = {
+          priKriom = "c9eca45c87e2f4478eec5488e2183fcf5536a34352201dec785c74dd1946268c";
+          address = "200:6c26:b746:f03a:1770:e227:56ee:3bcf";
+          subnet = "300:6c26:b746:f03a";
+        };
+        niksPriKriom = "Mx+wLIfTWjYm2b+gI6X5vxY0eGtScNB1+51DxIZbeus=";
       };
     };
 
@@ -173,7 +189,7 @@
         yggdrasil = {
           priKriom = "834f26b8d12a4f787fc8262114f2a873641f331e1b26e9ce0e01539f35f2f160";
           address = "200:922:1a8f:40f8:db97:38ab:a7aa:1b39";
-          subnet = "300:922:1a8f:40f8::";
+          subnet = "300:922:1a8f:40f8";
         };
         niksPriKriom = "Mx+wLIfTWjYm2b+gI6X5vxY0eGtScNB1+51DxIZbeus=";
       };
