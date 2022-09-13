@@ -147,12 +147,13 @@
         swapDevices = [ ];
       };
       priKriomz = {
+        eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAIDjXtLUY5gSvogSTzU54x/EryOgNVZ2HkCYQL1d9lKEB";
         yggdrasil = {
           priKriom = "c9eca45c87e2f4478eec5488e2183fcf5536a34352201dec785c74dd1946268c";
           address = "200:6c26:b746:f03a:1770:e227:56ee:3bcf";
           subnet = "300:6c26:b746:f03a";
         };
-        niksPriKriom = "Mx+wLIfTWjYm2b+gI6X5vxY0eGtScNB1+51DxIZbeus=";
+        niksPriKriom = "cV4q5ycwjEd/VhSKhZolX8VVhv47MHSfatOBNq7bjuE=";
       };
     };
 
