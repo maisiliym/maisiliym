@@ -119,7 +119,7 @@
     };
 
     dante = {
-      spici = "haibrid";
+      spici = "sentyr";
       saiz = 2;
       trost = 3;
       mycin = {
