@@ -187,10 +187,11 @@
         swapDevices = [ ];
       };
       priKriomz = {
+        eseseitc = "AAAAC3NzaC1lZDI1NTE5AAAAICWYATms2fd9JVJNrMetB8uNNP/ZKNG9/QhJBkyJ/6VX";
         yggdrasil = {
-          priKriom = "834f26b8d12a4f787fc8262114f2a873641f331e1b26e9ce0e01539f35f2f160";
-          address = "200:922:1a8f:40f8:db97:38ab:a7aa:1b39";
-          subnet = "300:922:1a8f:40f8";
+          priKriom = "d7cbcd3122a0ba4d0ca1f662ecbab4bc376343ece193749c3f94a6e1b24f42db";
+          address = "200:5068:659d:babe:8b65:e6bc:133a:268a";
+          subnet = "300:5068:659d:babe";
         };
         niksPriKriom = "Mx+wLIfTWjYm2b+gI6X5vxY0eGtScNB1+51DxIZbeus=";
       };
